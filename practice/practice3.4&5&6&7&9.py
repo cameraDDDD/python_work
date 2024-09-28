@@ -1,0 +1,25 @@
+people=['希特勒','毛泽东','拿破仑']
+print(f"欢迎{people[0]},{people[1]},{people[2]}大驾光临")
+print(f"{people[0]}因故无法赴约")
+people[0]="墨索里尼"
+print(f"欢迎{people[0]},{people[1]},{people[2]}大驾光临")
+print("找到一张更大的餐桌")
+people.insert(0,"马克思")
+people.insert(3,"列宁")
+people.insert(6,"凯撒")
+print(f"欢迎{people[0]},{people[1]},{people[2]},{people[3]},{people[4]},{people[5]}大驾光临")
+print("因餐桌未到达,只能邀请两位嘉宾")
+a=people.pop()
+print(f"很报歉无法与你共进晚餐{a}先生")
+b=people.pop()
+print(f"很报歉无法与你共进晚餐{b}先生")
+c=people.pop()
+print(f"很报歉无法与你共进晚餐{c}先生")
+d=people.pop()
+print(f"很报歉无法与你共进晚餐{d}先生")
+print(f"很高兴告诉您{people[0]},您仍在受邀之列")
+print(f"很高兴告诉您{people[1]},您仍在受邀之列")
+del people[0]
+del people[0]
+print(people)
+print(f"共有{len(people)}名先生参加我们的宴会")

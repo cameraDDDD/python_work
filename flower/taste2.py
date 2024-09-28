@@ -1,0 +1,9 @@
+a=1
+b=a
+a=2
+print(b)#b=1
+#but
+a=[1]
+b=a
+a.append(2)
+print(b)
