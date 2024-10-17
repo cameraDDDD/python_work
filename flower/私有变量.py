@@ -1,0 +1,20 @@
+class Phone:
+    __a=0
+    def __init__(self) :
+        self.__is_5g_enable = False
+    def __check_5g(self):
+        if self.__is_5g_enable==True:
+            print("5g已开启")
+        else :
+            print("5g关闭,使用4g网络")
+    def call_by_5g(self):
+        self.__check_5g()
+        print("正在通话中...")
+K70=Phone()
+K70.call_by_5g()
+print(f"{K70.__a}")
+
+
+    
+
+
